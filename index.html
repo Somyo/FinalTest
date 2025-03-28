@@ -3,64 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>冥想 - 首页</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>冥想APP原型设计</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#000DFF',
+                        secondary: '#6B73FF',
+                    }
+                }
+            }
+        }
+    </script>
 </head>
-<body>
-    <div class="container">
-        <div class="p-4">
-            <div class="relative -mx-4 -mt-4 mb-6">
-                <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=800&h=200&fit=crop" 
-                     alt="冥想背景" 
-                     class="w-full h-48 object-cover">
-                <div class="absolute inset-0 bg-gradient-to-b from-black/50 to-transparent"></div>
-                <div class="absolute inset-0 p-6 flex flex-col justify-end">
-                    <div class="text-2xl font-bold text-white mb-2">今天，让我们开始冥想</div>
-                    <div class="text-base text-white/90">保持专注，感受当下</div>
-                </div>
-            </div>
-
-            <div class="space-y-4">
-                <div class="meditation-card bg-white rounded-2xl p-6 shadow-md">
-                    <div class="flex items-center space-x-4">
-                        <img src="https://images.unsplash.com/photo-1545205597-3d9d02c29597?w=100&h=100&fit=crop&rounded-full" 
-                             alt="呼吸冥想" 
-                             class="w-16 h-16 rounded-full object-cover">
-                        <div class="flex-1">
-                            <div class="text-lg font-semibold text-gray-800">呼吸冥想</div>
-                            <div class="flex justify-between text-sm text-gray-600 mt-1">
-                                <span>10分钟</span>
-                                <span>适合初学者</span>
-                            </div>
-                        </div>
+<body class="bg-gray-50">
+    <div class="max-w-md mx-auto bg-white min-h-screen relative">
+        <!-- 首页 -->
+        <div class="home-section" id="home">
+            <div class="p-4">
+                <div class="relative -mx-4 -mt-4 mb-6">
+                    <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=800&h=200&fit=crop" 
+                         alt="冥想背景" 
+                         class="w-full h-48 object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-b from-black/50 to-transparent"></div>
+                    <div class="absolute inset-0 p-6 flex flex-col justify-end">
+                        <div class="text-2xl font-bold text-white mb-2">今天，让我们开始冥想</div>
+                        <div class="text-base text-white/90">保持专注，感受当下</div>
                     </div>
                 </div>
 
-                <div class="meditation-card bg-white rounded-2xl p-6 shadow-md">
-                    <div class="flex items-center space-x-4">
-                        <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=100&h=100&fit=crop&rounded-full" 
-                             alt="正念冥想" 
-                             class="w-16 h-16 rounded-full object-cover">
-                        <div class="flex-1">
-                            <div class="text-lg font-semibold text-gray-800">正念冥想</div>
-                            <div class="flex justify-between text-sm text-gray-600 mt-1">
-                                <span>15分钟</span>
-                                <span>中级</span>
+                <div class="space-y-4">
+                    <div class="meditation-card bg-white rounded-2xl p-6 shadow-md">
+                        <div class="flex items-center space-x-4">
+                            <img src="https://images.unsplash.com/photo-1545205597-3d9d02c29597?w=100&h=100&fit=crop&rounded-full" 
+                                 alt="呼吸冥想" 
+                                 class="w-16 h-16 rounded-full object-cover">
+                            <div class="flex-1">
+                                <div class="text-lg font-semibold text-gray-800">呼吸冥想</div>
+                                <div class="flex justify-between text-sm text-gray-600 mt-1">
+                                    <span>10分钟</span>
+                                    <span>适合初学者</span>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="meditation-card bg-white rounded-2xl p-6 shadow-md">
-                    <div class="flex items-center space-x-4">
-                        <img src="https://images.unsplash.com/photo-1518241353330-0f7941c2d9b5?w=100&h=100&fit=crop&rounded-full" 
-                             alt="深度冥想" 
-                             class="w-16 h-16 rounded-full object-cover">
-                        <div class="flex-1">
-                            <div class="text-lg font-semibold text-gray-800">深度冥想</div>
-                            <div class="flex justify-between text-sm text-gray-600 mt-1">
-                                <span>20分钟</span>
-                                <span>高级</span>
+                    <div class="meditation-card bg-white rounded-2xl p-6 shadow-md">
+                        <div class="flex items-center space-x-4">
+                            <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=100&h=100&fit=crop&rounded-full" 
+                                 alt="正念冥想" 
+                                 class="w-16 h-16 rounded-full object-cover">
+                            <div class="flex-1">
+                                <div class="text-lg font-semibold text-gray-800">正念冥想</div>
+                                <div class="flex justify-between text-sm text-gray-600 mt-1">
+                                    <span>15分钟</span>
+                                    <span>中级</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="meditation-card bg-white rounded-2xl p-6 shadow-md">
+                        <div class="flex items-center space-x-4">
+                            <img src="https://images.unsplash.com/photo-1518241353330-0f7941c2d9b5?w=100&h=100&fit=crop&rounded-full" 
+                                 alt="深度冥想" 
+                                 class="w-16 h-16 rounded-full object-cover">
+                            <div class="flex-1">
+                                <div class="text-lg font-semibold text-gray-800">深度冥想</div>
+                                <div class="flex justify-between text-sm text-gray-600 mt-1">
+                                    <span>20分钟</span>
+                                    <span>高级</span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -68,17 +87,131 @@
             </div>
         </div>
 
-        <div class="tab-bar">
-            <div class="tab-item active">
-                <div>首页</div>
+        <!-- 统计页面 -->
+        <div class="stats-section hidden" id="stats">
+            <div class="p-4">
+                <div class="bg-white rounded-2xl p-6 shadow-md">
+                    <div class="text-lg font-semibold text-gray-800 mb-4">本周进度</div>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="bg-gray-50 rounded-xl p-4 text-center">
+                            <div class="text-2xl font-bold text-primary">5</div>
+                            <div class="text-sm text-gray-600 mt-1">冥想次数</div>
+                        </div>
+                        <div class="bg-gray-50 rounded-xl p-4 text-center">
+                            <div class="text-2xl font-bold text-primary">75</div>
+                            <div class="text-sm text-gray-600 mt-1">总时长(分钟)</div>
+                        </div>
+                        <div class="bg-gray-50 rounded-xl p-4 text-center">
+                            <div class="text-2xl font-bold text-primary">3</div>
+                            <div class="text-sm text-gray-600 mt-1">连续天数</div>
+                        </div>
+                        <div class="bg-gray-50 rounded-xl p-4 text-center">
+                            <div class="text-2xl font-bold text-primary">85%</div>
+                            <div class="text-sm text-gray-600 mt-1">完成率</div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <a href="stats.html" class="tab-item">
-                <div>统计</div>
-            </a>
-            <a href="profile.html" class="tab-item">
-                <div>我的</div>
-            </a>
+        </div>
+
+        <!-- 个人中心 -->
+        <div class="profile-section hidden" id="profile">
+            <div class="p-4">
+                <div class="text-center mb-8">
+                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=80&h=80&fit=crop&rounded-full" 
+                         alt="用户头像" 
+                         class="w-20 h-20 rounded-full mx-auto mb-3 object-cover">
+                    <div class="text-xl font-semibold text-gray-800">用户名</div>
+                    <div class="text-sm text-gray-600">冥想初学者</div>
+                </div>
+
+                <div class="bg-white rounded-2xl overflow-hidden shadow-md">
+                    <div class="border-b border-gray-100">
+                        <div class="px-6 py-4 flex justify-between items-center">
+                            <span class="text-gray-800">个人设置</span>
+                            <span class="text-gray-400">></span>
+                        </div>
+                    </div>
+                    <div class="border-b border-gray-100">
+                        <div class="px-6 py-4 flex justify-between items-center">
+                            <span class="text-gray-800">通知设置</span>
+                            <span class="text-gray-400">></span>
+                        </div>
+                    </div>
+                    <div class="border-b border-gray-100">
+                        <div class="px-6 py-4 flex justify-between items-center">
+                            <span class="text-gray-800">隐私设置</span>
+                            <span class="text-gray-400">></span>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="px-6 py-4 flex justify-between items-center">
+                            <span class="text-gray-800">关于我们</span>
+                            <span class="text-gray-400">></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 冥想详情页 -->
+        <div class="meditation-detail hidden" id="meditation-detail">
+            <div class="p-4">
+                <div class="text-center mb-8">
+                    <div class="text-2xl font-bold text-gray-800 mb-2">呼吸冥想</div>
+                    <div class="text-sm text-gray-600">10分钟 · 适合初学者</div>
+                </div>
+
+                <div class="text-center text-5xl font-bold text-gray-800 my-8">10:00</div>
+
+                <div class="flex justify-center space-x-4 mt-8">
+                    <button class="px-6 py-3 rounded-full bg-gray-100 text-gray-800 font-semibold">暂停</button>
+                    <button class="px-6 py-3 rounded-full bg-primary text-white font-semibold">开始</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 底部导航栏 -->
+        <div class="fixed bottom-0 w-full max-w-md bg-white shadow-lg">
+            <div class="flex justify-around py-3">
+                <div class="tab-item text-center text-primary" onclick="showSection('home')">
+                    <div>首页</div>
+                </div>
+                <div class="tab-item text-center text-gray-500" onclick="showSection('stats')">
+                    <div>统计</div>
+                </div>
+                <div class="tab-item text-center text-gray-500" onclick="showSection('profile')">
+                    <div>我的</div>
+                </div>
+            </div>
         </div>
     </div>
+
+    <script>
+        function showSection(sectionId) {
+            // 隐藏所有section
+            document.querySelectorAll('.home-section, .stats-section, .profile-section, .meditation-detail').forEach(section => {
+                section.classList.add('hidden');
+            });
+
+            // 显示选中的section
+            document.getElementById(sectionId).classList.remove('hidden');
+
+            // 更新底部导航栏状态
+            document.querySelectorAll('.tab-item').forEach(item => {
+                item.classList.remove('text-primary');
+                item.classList.add('text-gray-500');
+            });
+            event.currentTarget.classList.remove('text-gray-500');
+            event.currentTarget.classList.add('text-primary');
+        }
+
+        // 点击冥想卡片显示详情页
+        document.querySelectorAll('.meditation-card').forEach(card => {
+            card.addEventListener('click', () => {
+                showSection('meditation-detail');
+            });
+        });
+    </script>
 </body>
 </html> 
